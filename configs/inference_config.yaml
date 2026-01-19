@@ -1,0 +1,19 @@
+model:
+  vocab_size: 16410
+  max_len: 58
+  img_size: 280
+  patch_size: 8
+  in_channels: 3
+  d_model: 1024
+  num_heads: 8
+  depth: 12
+  embed_dim: 512
+
+transforms:
+  Resize: 280
+  CenterCrop: 280
+
+image_root: data/inference_image
+vocab_path: data/vocab.txt
+json_path: data/inference_image_caption.json
+pretrained: pretrained/best.pth

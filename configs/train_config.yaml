@@ -1,0 +1,25 @@
+model:
+  vocab_size: 16410
+  max_len: 58
+  img_size: 280
+  patch_size: 2
+  in_channels: 3
+  d_model: 1024
+  num_heads: 8
+  depth: 12
+  embed_dim: 512
+
+data:
+  image_root: data/train_image
+  vocab_path: data/vocab.txt
+  json_path: data/train_image_caption.json
+
+transforms:
+  Resize: 280
+  CenterCrop: 280
+
+batch_size: 64
+lr: 0.0001
+epochs: 100
+resume: False
+pretrained: pretrained
