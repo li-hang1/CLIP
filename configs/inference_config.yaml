@@ -16,4 +16,4 @@ transforms:
 image_root: data/inference_image
 vocab_path: data/vocab.txt
 json_path: data/inference_image_caption.json
-pretrained: pretrained/best.pth
+pretrained: pretrained/clip_best.pth
